@@ -1,0 +1,2 @@
+# omsindia
+simple static website
