@@ -1,0 +1,699 @@
+<html>
+    <head>
+        <title>om enterprises</title>
+        <style>
+            ul
+            {
+                list-style-type: none;
+                overflow: hidden;
+                margin: 0;
+            }
+            li
+            {
+                float: left;
+            }
+            li a
+            {
+                display: block;
+                padding: 10px 10px;
+                border-right: 3px solid aliceblue;
+                text-decoration: none;
+            }
+            .menu
+            {
+                height:70px;
+                width: 100%;
+                display: inline-flex;
+                position: sticky;
+                top: 0;
+                background-color: white;
+                
+            }
+            .menu h1
+            {
+                margin:0;
+                font-size: 45px;
+                color: #ea6207;
+                align-items: center;
+                font-family: sans-serif;
+            }
+            .menu img
+            {
+                height:55px;
+                width: 55px;
+            }
+            li a:hover
+            {
+                color: #ea6207;
+            }
+            .menu li a
+            {
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            
+            .box1
+            {
+                margin-top: -10px;
+                height: 400px;
+                width:100%;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-image: url('img/carousel-1.jpeg');
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-family: sans-serif;
+                font-size: larger;
+            }
+            .bigbox2
+            {
+                height:600px;
+                width:600px;
+                
+                display: flex;
+            }
+            .box2
+            {
+                height:650px;
+                width: 100%;
+                /* border: 1px solid black; */
+                margin-top: 50px;
+                display:flex;
+               column-gap:40px;
+            }
+            .smallbox
+            {
+                background-color: #ea6207;
+                color: white;
+                font-size: large;
+                height: 200px;
+                width: 200px;
+                position: relative;
+                z-index: 1;
+                margin-left: 50px;
+                text-align: center;
+                border-right: 20px solid white;
+                border-bottom: 20px solid white;
+                
+            }
+            .imgbox
+            {
+                position: absolute;
+                height: 400px;
+                width:500px;
+                z-index: -1;
+                /* border: 1px solid green; */
+                margin-top: 100px;
+               left:100px;
+            
+             
+            }
+            div img
+            {
+                height: 100%;
+                width: 100%;
+            }
+            .para
+            {
+                height: 500px;
+                width: 820px;
+                
+                
+                
+                
+            }
+            .parahead
+            {
+                height: 100px;
+                width:100%;
+                /* border: 1px solid green; */
+                border-left: 15px solid #ea6207;
+            }
+            .parahead h1
+            {
+                color: #ea6207;
+                font-family: sans-serif;
+                margin-left: 20px;
+               
+            }
+               
+            .para p
+            {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: large;
+                color: #8D9297;
+                text-align: left;
+            }
+            .parafoot
+            {
+                margin-top:120px;
+                left: 30px;
+                height:110px;
+                width:100%;
+                
+                display: flex;
+                column-gap: 40px;
+                align-items: center;
+
+            }
+            .footbox
+            {
+                height:90px;
+                width:250px;
+                
+                display: flex;
+
+            }
+            .box3
+            {
+                height:400px;
+                width:96%;
+                margin-left:4%;
+                
+            }
+            .box3 ul li
+            {
+                list-style-type: disc;
+                float: none;
+                font-family: sans-serif;
+                color: #8D9297;
+            }
+            .box3 p
+            {
+                font-family: sans-serif;
+                color: #8D9297;
+            }
+            .box3 .parahead
+            {
+                height: 70px;
+                width:100%;
+                
+                border-left: 10px solid #ea6207;
+            }
+            .body2
+            {
+                height: 7000px;
+            
+                width: 100%;
+                display: flex;
+                margin-left: 4%;
+               column-gap: 100px;
+               flex-wrap: wrap;
+               
+                
+            }
+            .bigpics
+            {
+                height: 400px;
+                width: 400px;
+                display: block;
+                
+            
+            }
+            .bigpics:hover
+            {
+                background-color: #ea6207;
+                color: white;
+            }
+            .pics
+            {
+                height: 300px;
+                width: 400px;
+            }
+            .bigpics h1
+            {
+                font-family: sans-serif;
+                text-align: center;
+            }
+            .bodyform
+            {
+                height: 600px;
+                width: 100%;
+                
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-image: url('img/carousel-2.jpg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            form
+            {
+                display: flex;
+                flex-wrap: wrap;
+                
+                width: 800px;
+                height: 500px;
+                column-gap: 20px;
+
+            }
+            form input
+            {
+                height: 80px;
+                width: 380px;
+                background-color: #182333;
+                color: #8D9297;
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            .certificates
+            {
+                height: 1100px;
+                width: 100%;
+                /* border: 1px solid black;  */
+            }
+        
+            .boxcert
+            {
+                height: 500px;
+                width: 600px;
+                /* border: 1px solid red; */
+            }
+            .boxcert img
+            {
+                height: 400px;
+                width: 100%;
+            }
+            
+            #cert3
+            {
+                margin-left: 650px;
+                margin-top:-1004px;
+            }
+            .footer
+            {
+                height:500px;
+                width:100%;
+                background-color: #182333;  
+                display: flex; 
+                column-gap: 30px;            
+            }
+            .smallfoot
+            {
+                height:500px;
+                width:350px;
+                /* border:1px solid #ea6207; */
+                margin-left: 5%;
+                margin-top: ;
+            }
+            .smallfoot h1
+            {
+                margin-top:50px;
+                font-family: sans-serif;
+                color: #ea6207;
+                font-size: 50px;
+
+            }
+            .smallfoot p
+            {
+                font-family: sans-serif;
+                color: #8D9297;
+                font-size: large;
+                text-align: justify;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">+919346396533</a></li>
+            <li><a href="#">info.omsenterprises@gmail.com</a></li>
+            <li><a href="#">March 13, 2026</a></li>
+        </ul>
+        <div class="menu">
+            <img src="img/om.jpeg">
+            <h1 style="margin-left: 25px;padding-right: 400px;">Om Shri Enterprises</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Product</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+
+        </div>
+        <div class="box1" style="align-items: center;" > 
+            <h1>Welcome to Om Shri Enterprises
+A leading Stockist & Trader of premium quality products</h1>
+        </div>
+        <div class="box2">
+            <div class="bigbox2">
+            <div class="smallbox"><h1>2+ <br><br>DECADES <br>Experience</h1></div>
+            <div class="imgbox"><img src="img/carousel-1.jpeg" ></div>
+            </div>
+            <div class="para">
+                <div class="parahead">
+                    <h3 style="color:#8D9297; margin: 0; ">About Us</h3>
+                    <h1 style="color: #ea6207; font-family: sans-serif;"> Om Shri Enterprises</h1>
+                    <p> <span style="color: #ea6207;">Om Shri Enterprises</span>(www.omseindia.com), established in 2022, is a rapidly growing and professionally managed organizati
+                        on headquartered in Telangana, India. We have emerged as a trusted name in the field of industrial, 
+                        construction and infrastructure supply solutions, backed by strong market expertise and a commitment 
+                        to operational excellence.
+                    </p><br>
+                    <p>We are leading stockists and traders specializing in the supply of Bearings, Conveyor Belts, V-Belts, Oil Seals/ O-Rings, Idlers & Rollers, PVC Water Stoppers, 
+                        Mastic Pads, Safety Products and a comprehensive range of Rubber, PVC, Construction/ Infrastructure and 
+                        Industrial materials. Our diversified portfolio enables us to cater to both project-based requirements and 
+                        continuous industrial operations with efficiency and reliability
+                    </p>
+                    <div class="parafoot">
+                        <div class="footbox"><img src="img/tick.jpg" style="height:70px;width: 70px;"><h2 style="font-family: sans-serif;text-align: justify;">On time at Supplies</h2></div>
+                        <div class="footbox"><img src="img/tick.jpg" style="height:70px;width: 70px;"><h2 style="font-family: sans-serif;text-align: justify;">Trusted Products</h2></div>
+                        <div class="footbox"><img src="img/tick.jpg" style="height:70px;width: 70px;"><h2 style="font-family: sans-serif;text-align: justify;">Verified Manufacturers</h2></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="parahead"><h1>Industries We Serve</h1>
+               
+            </div>
+            <h3 style="font-family: sans-serif;">We provide supply solutions to multiple industrial sectors including:</h3>
+            <div>
+            <ul>
+                <li>Construction & Infrastructure Industry</li>
+                <li>Stone Crushing Units</li>
+                <li>Concrete Batching Plant Units</li>
+                <li>Steel Industry</li>
+                <li>Cement Industry</li>
+                <li>Chemical Industry</li>
+                <li>Mining Industry</li>
+                <li>Engineering & Manufacturing Units</li>
+            </ul>
+            </div>
+        </div>
+        <div class="box3" style="height:450px">
+            <div class="parahead"><h1>Our Strength</h1>
+            </div>
+            <p>With over two decades of cumulative leadership experience across the Automobile, Construction & Infrastructure and IT sectors,
+               we bring a strong blend of technical insight, procurement efficiency and customer-focused service. Our strategic alliances with 
+               reputed manufacturers allow us to deliver quality-assured products at competitive market pricing, while maintaining supply consistency 
+               and timely delivery.
+
+            </p><br>
+            <p>Our ability to understand technical specifications and project demands ensures that our clients receive products aligned with 
+                industry standards and performance expectations.
+
+            </p>
+            <ul>
+                <li>Strong Manufacturer Tie-ups</li>
+                <li>Quality Assured Products</li>
+                <li>Competitive Market Pricing</li>
+                <li>Technical Product Knowledge</li>
+                <li>Reliable Supply Chain Network</li>
+                <li>Customer-Centric Service Approach</li>
+                <li>Timely Delivery Commitment</li>
+            </ul>
+            
+            
+            
+        </div>
+        <div class="box3" style="height: 200px;">
+            <div class="parahead" ><h1>Our Commitment</h1>
+            </div>
+          <p>At Om Shri Enterprises, we believe that long-term partnerships are built on trust, transparency 
+                    and dependable performance. Our operational approach is driven by professionalism, ethical 
+                    business practices and a deep commitment to customer satisfaction.
+          </p>
+        </div> 
+        <div class="box3" style="height: 250px;">
+            <div class="parahead" ><h1>Our Mission</h1>
+            </div> 
+            <ul>
+                <li>To provide high-quality, standards-compliant industrial and infrastructure products.</li>
+                <li>To build enduring partnerships through integrity, transparency, and service excellence.</li>
+                <li>To ensure timely delivery and cost-effective solutions tailored to client requirements.</li>
+                <li>To continuously strengthen our network of reputed manufacturers and expand our product portfolio.</li>
+                <li>To contribute to the growth of the industries we serve through dependable supply chain solutions.</li>
+                
+            </ul>
+        </div>
+        <div class="box3" style="height: 250px;">
+            <div class="parahead" ><h1>Why Choose Us</h1>
+            </div> 
+            <ul>
+                <li>Experienced and technically skilled team</li>
+                <li>Wide product range under one roof</li>
+                <li>Transparent and ethical business practices</li>
+                <li>Fast response and customer support</li>
+                <li>Customized supply solutions</li>
+                
+            </ul>
+        </div>
+        <div class="body2">
+            <div class="parahead"><h1>Our Products</h1></div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p1.png"></div>
+                <h1>Conveyor belt</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/v_cleated.jpeg"></div>
+                <h1>V-Type Cleated Chevron Belt</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/multi_v_cleated.jpeg"></div>
+                <h1>Multi V-Type Cleated Conveyor Belt</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p4.png"></div>
+                <h1>Lagging Rubber Sheet</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p18.jpeg"></div>
+                <h1>Bearings</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p16.jpeg"></div>
+                <h1>Plummer Block Bearing</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p17.jpeg"></div>
+                <h1>Pulley</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/roller_iddler.jpeg"></div>
+                <h1>Rollers & Adlers</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p2.png"></div>
+                <h1>Crusher Screen</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p11.jpeg"></div>
+                <h1>V-Belt</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p15.jpeg"></div>
+                <h1>Rubber-Beading</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p3.png"></div>
+                <h1>Hose Pipe</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/oilseals.png"></div>
+                <h1>Oil Seals & O-Rings</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/motor.jpeg"></div>
+                <h1>Motor</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/gearbox.jpeg"></div>
+                <h1>Gearbox</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Pneumatic_Products.jpeg"></div>
+                <h1>Pneaumatic Products</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p6.png"></div>
+                <h1>PVC Water Stopper</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p5.png"></div>
+                <h1>Mastic Pads</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p10.jpeg"></div>
+                <h1>DI Pipe Gasket</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p13.jpeg"></div>
+                <h1>Drainage Sprout</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/neo.jpeg"></div>
+                <h1>Neo Prene Rubber Sheet</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p14.jpeg"></div>
+                <h1>LDPE Sheet</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p19.jpeg"></div>
+                <h1>Foam Sheet</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p20.jpeg"></div>
+                <h1>Bitumen Sheet</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p20.jpeg"></div>
+                <h1>Bitumen Sheet(Thar Sheet)</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p21.jpeg"></div>
+                <h1>Hessian Cloth</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p23.jpg"></div>
+                <h1>PVC Rungs</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Tooth_Points.jpg"></div>
+                <h1>Tooth Points</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Excavator _tooth_Point.jpg"></div>
+                <h1>Excavator Tooth Points</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/p22.jpg"></div>
+                <h1>Adaptor-Excavator Bucket</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/vsi_tips.jpg"></div>
+                <h1>Vsi Tips</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/drill_Rods.jpeg"></div>
+                <h1>Drill Roads</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Taper_Bits.jpeg"></div>
+                <h1>Taper Bits</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Chisel.jpeg"></div>
+                <h1>Chisel For Hydraulic Breaker</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/safty.jpg"></div>
+                <h1>Safety Products</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Agri_weeder.jpeg"></div>
+                <h1>Agricultural Power Weeder Machine</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/irrigation2.jpg"></div>
+                <h1>Irrigation Water Pump</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Concrete_Shutter_Vivrator.png"></div>
+                <h1>Concrete Shutter Vibrator</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Needle_Vivrator.jpeg"></div>
+                <h1>Concrete Needle Vibrator</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Expansion Joint Filler Board.png"></div>
+                <h1>Expansion Joint Filler Board / HD100 Duraboard</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/Chainsaw Machine.png"></div>
+                <h1>Chainsaw Machine</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/conbextra.png"></div>
+                <h1>Conbextra GP2 Cement</h1>
+            </div>
+            <div class="bigpics">
+                <div class="pics"><img src="img/GI Welded Mesh.jpeg"></div>
+                <h1>GI Welded Mesh</h1>
+            </div>
+        </div>
+        <div class="bodyform">
+            <div class="parahead" style="width:400px;"><h1 style="color: whitesmoke;">Contact Us</h1></div>
+            <form>
+                <input type="text" value="Your Name">
+                <input type="email" value="Your Email">
+                <input type="text" value="Your Number">
+                <input type="text" value="Product details">
+                <input type="text" value="Message" style="height: 120px;width: 100%;">
+                <input type="button" value="send" style="width: 100%; background-color: #ea6207;color: #182333;">
+            </form>
+        </div>
+
+        <div class="certificates">
+            <div class="parahead"><h1>Our Certifications</h1></div>
+           
+            <div class="boxcert"> 
+                <img src="img/gst.jpeg">
+               <h1>GST Certificate</h1>
+            </div>
+            
+            <div class="boxcert"> 
+                <img src="img/msmse.jpeg">
+               <h1>MSME Certificate</h1>
+            </div>
+
+            <div class="boxcert" id="cert3">
+                 <img src="img/indiamart.jpeg">
+                 <h1>IndiaMart</h1>
+            </div>
+            
+        </div>
+        <div class="parahead" style="height:80px ;width:96%;margin-left: 3%;">
+            <h1 style="color: black;">Our Happy Clients</h1>
+        </div>
+        <div style="height: 100px;width: 300px; margin-left: 3%; font-family: sans-serif;">
+            <h1><strong>36+</strong> <br>Happy Clients</h1>
+        </div>
+        <div class="footer">
+            <div class="smallfoot">
+                <h1>Om Shri Enterprises</h1>
+                <p>Om Shri Enterprises (www.omseindia.com), established in 2022, is a rapidly growing and professionally
+                     managed organization headquartered in Telangana, 
+                    India. We have emerged as a trusted
+                     name in the field of industrial, construction and infrastructure supply solutions, backed by strong 
+                     market expertise and a commitment to operational excellence.
+                </p>
+                <div class="bigpics" style="height:60px;width:350px; display: flex;">
+                    <img src="img/icon/fb.png" alt=""> 
+                    <img src="img/icon/twit.png" alt=""> 
+                    <img src="img/icon/win.png" alt=""> 
+                    <img src="img/icon/tick.jpg" alt="">
+                    <img src="img/icon/g.jpg" alt="">
+                </div>
+            </div>
+            <div class="smallfoot">
+                <h1 style="color: white; font-size: 22px;">Address</h1> 
+                <ul style="color: #8D9297; font-family: sans-serif;font-size: 18px;">
+                    <li>Bibinagar, Pochampally Road, Yadadri Bhuvanagiri (Dist.) Telangana- 508126, India</li>
+                    <li>  +91 9630866497</li>
+                    <li>info.omsenterprises@gmail.com , info@omseindia.com</li>
+                </ul>
+           </div>
+           <div class="smallfoot" style="width: 200px;">
+            <h1 style="color: white; font-size: 22px;">Quick Links</h1>
+            <ul style="list-style-type: circle; color: #8D9297;font-size: 18px;font-family: sans-serif;">
+                <li>About us</li>
+                <li>Contact Us</li>
+                <li>Our Products</li>
+            </ul>
+           </div>
+           <div class="smallfoot" style="width: 200px;">
+            <h1 style="color: white;font-size: 22px;">News letter</h1>
+            <a href="#" style="color: #ea6207;text-decoration: none;font-family: sans-serif;">News By Omsindia</a>
+
+           </div>
+        </div>
+        
+    </body>
+</html>
